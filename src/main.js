@@ -17,17 +17,3 @@ render(<Root store={configureStore({
     	yearlyExtra: 0
     })
 })} />, appRoot);
-
-
-//import Splash from './containers/splash';
-// render(<Splash />, appRoot);
-
-// loadAllTracks().then(tracks => {
-// 	const store = configureStore({
-// 		tracksById: tracks.reduce((obj, track) => {
-// 			obj[track.id] = track;
-// 			return obj
-// 		}, {})
-// 	});
-// 	render(<Root store={store} />, appRoot);
-// });
