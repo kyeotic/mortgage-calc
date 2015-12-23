@@ -6,12 +6,16 @@
   "scripts": {
     "build:css": "stylus assets/stylus/app.styl --out assets/css --sourcemap --compress",
     "watch:css": "stylus assets/stylus/app.styl --out assets/css --sourcemap --compress --watch",
+    "build:js": "jspm bundle-sfx main.js dist/app-built.js",
     "mini": "uglifyjs app-built.js --compress --output app-built.min.js --source-map app-built.min.js.map"
   },
   "author": "Timothy Moran",
   "license": "MIT",
   "jspm": {
-    "configFile": "system.config.js",
+    "directories": {
+      "baseURL": "src"
+    },
+    "configFile": "src/system.config.js",
     "dependencies": {
       "moment": "npm:moment@^2.10.6",
       "numeral": "npm:numeral@^1.5.3",

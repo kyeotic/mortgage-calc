@@ -1,5 +1,5 @@
 System.config({
-  //baseURL: "/mortgage",
+  baseURL: "/",
   defaultJSExtensions: true,
   transpiler: "babel",
   babelOptions: {

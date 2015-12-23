@@ -28617,19 +28617,6 @@ $__System.register('1', ['3', '2a', '1b5', '1cc', '1c4'], function (_export) {
                         yearlyExtra: 0
                     })
                 }) }), appRoot);
-
-            //import Splash from './containers/splash';
-            // render(<Splash />, appRoot);
-
-            // loadAllTracks().then(tracks => {
-            // 	const store = configureStore({
-            // 		tracksById: tracks.reduce((obj, track) => {
-            // 			obj[track.id] = track;
-            // 			return obj
-            // 		}, {})
-            // 	});
-            // 	render(<Root store={store} />, appRoot);
-            // });
         }
     };
 });
