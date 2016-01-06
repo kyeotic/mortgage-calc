@@ -4,9 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "setup": "npm i && jspm i",
     "build:css": "stylus assets/stylus/app.styl --out assets/css --sourcemap --compress",
     "watch:css": "stylus assets/stylus/app.styl --out assets/css --sourcemap --compress --watch",
     "build:js": "jspm bundle-sfx main.js dist/app-built.js",
+    "build": "npm run build:css && npm run build:js",
     "mini": "uglifyjs app-built.js --compress --output app-built.min.js --source-map app-built.min.js.map"
   },
   "author": "Timothy Moran",
