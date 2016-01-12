@@ -6,7 +6,7 @@ var port = process.env.PORT || 9000,
     app = express();
 
 //Configure
-app.use('/assets', express.static(assetDir));
+app.use(express.static(assetDir));
 app.use(express.static(clientDir));
 
 //Api
